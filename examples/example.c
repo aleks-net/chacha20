@@ -1,39 +1,3 @@
-# ChaCha20
-
-A simple single header solution to cryptographic encryption/decryption in C/C++.
-
-Supporting platforms such as Windows, macOS, and Linux.
-
-## Usage
-
-Just `#include "chacha20.h"` in your code!
-
-### chacha20_init
-
-```c
-void chacha20_init(struct chacha20_ctx* ctx, const unsigned char* key, const unsigned char* nonce, uint64_t counter);
-```
-
-- `ctx` - a chacha20 context structure.
-- `key` - CHACHA20_KEY_SIZE array.
-- `nonce` - CHACHA20_NONCE_SIZE array.
-- `counter` - a uint64_t count.
-
-### chacha20_update
-
-```c
-void chacha20_update(struct chacha20_ctx* ctx, unsigned char* buf, size_t len);
-```
-
-- `ctx` - a chacha20 context structure.
-- `buf` - buffer to encrypt/decrypt.
-- `len` - buffer length.
-
-## Examples
-
-# C
-
-```c
 #include <stdio.h>
 #include <string.h>
 
@@ -66,4 +30,3 @@ int main(int argc, char* argv[]) {
 
 	return 0;
 }
-```
