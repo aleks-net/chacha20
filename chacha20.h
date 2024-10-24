@@ -27,8 +27,8 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
 */
-#ifndef CHACHA20_H
-#define CHACHA20_H
+#ifndef CHACHA20_H_INCLUDED
+#define CHACHA20_H_INCLUDED
 
 #ifdef __cplusplus
 #include <cstdint>
